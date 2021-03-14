@@ -4,7 +4,7 @@ from quotes_data_extractor import QuotesDataExtractor
 import os
 
 
-headers = ["Total Revenue", "Total Operating Expense", "Interest Expense"]
+headers = ["Total sales"] #"Total Operating Expense"]
 data_dir = "./data"
 output_dir = "./output"
 
@@ -33,3 +33,4 @@ with open("input.txt") as f:
         build_plot(report_data, quotes_data, headers, output_dir, ticker)
 
 print("Done!")
+print("hi")
